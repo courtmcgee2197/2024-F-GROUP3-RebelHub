@@ -80,7 +80,8 @@ const RecursiveComment: React.FC<ComponentProps> = ({ post, currentComment, pare
 
     return (
         <div className={styles.container}>
-            <SingleComment 
+            <SingleComment
+                inHub={false}
                 comment={currentComment} 
                 post={post} 
                 parentCreate={createReply}
