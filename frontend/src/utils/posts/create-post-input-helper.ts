@@ -4,7 +4,7 @@ import type { FieldErrors, FieldValues, FieldError } from "react-hook-form";
 
 // CHANGE: Added this interface to define the return type
 interface InputErrorResult {
-  error?: FieldError | FieldError[];
+  error?: FieldError;
 }
 
 // Outputs the error, if there is one, that belongs to the input name.
