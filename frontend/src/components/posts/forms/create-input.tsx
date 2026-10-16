@@ -12,7 +12,9 @@ interface ComponentProps {
     validation: any,
     multiline: boolean,
 }
-
+interface InputErrorProps {
+  message: string;
+}
 /*
     CreateInput
 
@@ -74,7 +76,7 @@ const CreateInput: React.FC<ComponentProps> = ({ label, type, placeholder, name,
     )
 }
 
-const InputError = ({ message }) => {
+const InputError = ({ message }: InputErrorProps) => {
     // Displays an error message
     return (
         <div className={styles.createError}>
